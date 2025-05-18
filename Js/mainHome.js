@@ -59,7 +59,9 @@ $('.side-nav-btn').on('click',function(){
 
 // ...existing code...
 window.addEventListener('load', function () {
-    if (window.location.pathname !== '/' && performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+    if (performance.navigation.type === 1 || performance.getEntriesByType("navigation")[0]?.type === "reload") {
+    if (!window.location.pathname.endsWith('index.html')) {
         window.location.href = 'index.html';
     }
+}
 });
