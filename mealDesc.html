@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/yummy.css">
+</head>
+<body style="background-color: #0D0D0D;">
+    <div class="container-fluid">
+        <!-- Side Navbar -->
+        <div class="sideNavBar d-flex position-fixed z-3 min-vh-100 ">
+            <div class="side-nav d-flex flex-column justify-content-between py-3 px-3" style="background-color: #0D0D0D;">
+            <ul class="text-white list-unstyled d-flex flex-column gap-3 animate__animated">
+                <a href="searchPage.html"><li class="li1">Search</li></a>
+                <a href="category.html"><li class="li2">Categories</li></a>
+                <a href="area.html"><li class="li3">Area</li></a>
+                <a href="ingredients.html"><li class="li4">Ingredients</li></a>
+                <a href="contact.html"><li class="li5">Contact Us</li></a>
+            </ul>
+            <div class="side-nav-end text-white">
+                <div class="side-nav-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p class="m-0">Copyright Â© 2019 All Rights</p>
+                <p class="mb-4">Reserved.</p>
+            </div>
+            </div>
+            <div class="side-nav-logo d-flex flex-column justify-content-between align-items-center px-3 py-3">
+                <img src="images/logo (2).png" alt="">
+            <div class="side-nav-btn">
+                <i class="fa-solid fa-xmark d-none"></i>
+                <button class="navbar-toggler navBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <svg width="45" height="45" viewBox="0 0 30 30">
+                    <line x1="4" y1="5" x2="26" y2="5"   stroke="black" stroke-width="2"/>
+                    <line x1="4" y1="10" x2="26" y2="10" stroke="black" stroke-width="2"/>
+                    <line x1="4" y1="15" x2="26" y2="15" stroke="black" stroke-width="2"/>
+                    <line x1="4" y1="20" x2="26" y2="20" stroke="black" stroke-width="2"/>
+                    <line x1="4" y1="25" x2="26" y2="25" stroke="black" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="side-nav-logo-icons mb-4 d-flex flex-column gap-2">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+            </div>
+        </div>
+        <!-- Description Page -->
+        <div class="container description-page overflow-auto ">
+            <div class="row mt-5 " id="descriptionPage">
+                <span class="loader"></span>
+            </div>
+        </div>
+
+<script src="Js/bootstrap.bundle.min.js"></script>
+<script src="Js/jquery.min.js"></script>
+<script src="Js/mealDesc.js"></script>
+<script type="module" src="Js/mainHome.js"></script>
+</body>
+</html>
