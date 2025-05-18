@@ -60,6 +60,6 @@ $('.side-nav-btn').on('click',function(){
 // ...existing code...
 window.addEventListener('load', function () {
     if (window.location.pathname !== '/' && performance.navigation.type === performance.navigation.TYPE_RELOAD) {
-        window.location.href = '/';
+        window.location.href = 'index.html';
     }
 });
